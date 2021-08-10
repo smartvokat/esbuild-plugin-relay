@@ -1,6 +1,6 @@
 export default {
   roots: ["<rootDir>/src"],
-  testMatch: ["**/__tests__/**/*.+(ts|js)", "**/?(*.)+(spec|test).+(ts|js)"],
+  testMatch: ["**/__tests__/**/*.+(ts)", "**/?(*.)+(spec|test).+(ts)"],
   transform: {
     "^.+\\.(ts)$": "ts-jest",
   },

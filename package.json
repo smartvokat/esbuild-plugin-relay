@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "An esbuild plugin to transform tagged GraphQL template literals for Relay",
   "type": "module",
-  "main": "lib/index.js",
+  "module": "lib/index.js",
   "keywords": [
     "graphql",
     "relay",
@@ -25,6 +25,7 @@
     "esbuild": "^0.12.18",
     "graphql": "^15.5.1",
     "jest": "^27.0.6",
+    "relay-config": "^11.0.2",
     "ts-jest": "^27.0.4",
     "typescript": "^4.3.5"
   }
