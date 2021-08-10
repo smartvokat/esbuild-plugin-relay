@@ -28,7 +28,7 @@ export function compile(
 
   const imports: string[] = [];
 
-  contents = contents.replaceAll(/graphql`([\s\S]*?)`/gm, (_match, query) => {
+  contents = contents.replace(/graphql`([\s\S]*?)`/gm, (_match, query) => {
     const ast = parse(query);
 
     if (ast.definitions.length === 0) {
