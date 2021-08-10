@@ -55,7 +55,7 @@ export function compile(
 
     const hash = crypto
       .createHash("md5")
-      .update(print(ast), "utf8")
+      .update(print(definition), "utf8")
       .digest("hex");
 
     const id = `graphql__${hash}`;
@@ -92,7 +92,7 @@ export function compile(
     return result;
   });
 
-  return imports.join("\n") + contents;
+  return (imports.length > 0 ? `${imports.join("\n")}\n` : "") + contents;
 }
 
 function getErrorMessage(name: string, buildCommand: string) {
