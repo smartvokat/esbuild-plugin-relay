@@ -5,7 +5,7 @@ const buildOptions = {
   bundle: true,
   minify: process.env.NODE_ENV === "production",
   platform: "node",
-  external: ["graphql"],
+  external: ["graphql", "relay-config"],
   target: "node14",
 };
 
