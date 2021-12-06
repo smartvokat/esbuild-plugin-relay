@@ -27,6 +27,6 @@ test("use relay-config to automatically detect TypeScript configuration", () => 
     {}
   );
 
-  expect(options.filter.toString()).toBe("/\\.(ts|tsx)/");
+  expect(options.filter.toString()).toBe("/\\.tsx/");
   expect(compileOptions.artifactDirectory).toBe("src/__generated__");
 });

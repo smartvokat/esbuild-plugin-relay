@@ -17,6 +17,7 @@ export default function createRelayPlugin(opts?: PluginOptions): Plugin {
 
         return {
           contents: contents,
+          loader: options.loader || "jsx",
         };
       });
     },

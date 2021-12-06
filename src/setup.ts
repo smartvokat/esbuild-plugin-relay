@@ -1,4 +1,4 @@
-import type { PluginBuild } from "esbuild";
+import type { PluginBuild, Loader } from "esbuild";
 import { CompileOptions } from "./compile";
 
 export interface PluginOptions {
@@ -9,6 +9,7 @@ export interface PluginOptions {
   filter?: RegExp;
   module?: "cjs" | "esm";
   suffix?: string;
+  loader?: Loader;
 }
 
 export function setup(
@@ -39,9 +40,9 @@ export function setup(
   if (relayConfig.extensions && relayConfig.extensions.length) {
     filter = new RegExp(`/\.(${relayConfig.extensions.join("|")})/`);
   } else if (relayConfig.language == "typescript") {
-    filter = /\.(ts|tsx)/;
+    filter = /\.tsx/;
   } else {
-    filter = /\.(js|jsx)/;
+    filter = /\.jsx/;
   }
 
   const options = Object.assign({ filter }, opts) as Required<PluginOptions>;
