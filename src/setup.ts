@@ -19,10 +19,9 @@ export function setup(
 
   let relayConfig: any;
   try {
-    // eslint-disable-next-line no-eval
     process.chdir(build.initialOptions.absWorkingDir);
-    relayConfig = eval("require")("relay-config").loadConfig();
-    // eslint-disable-next-line lint/no-unused-catch-bindings
+    relayConfig =
+      typeof require === "function" ? require("relay-config").loadConfig() : {};
   } catch (_err) {
   } finally {
     process.chdir(currentCwd);
