@@ -11,6 +11,10 @@ An [esbuild](https://esbuild.github.io/) plugin to transform tagged GraphQL temp
 - Supports TypeScript projects
 - Optionally warns you about outdated operations and fragments
 
+## Caveat
+
+This plugin uses string replacements and **does not parse** the source code. This means it will try to compile GraphQL literals even if they are commented out. If that does not fit your workflow, you'll need to use ESBuild + babel + babel-plugin-relay.
+
 ## Installation
 
 ```sh
