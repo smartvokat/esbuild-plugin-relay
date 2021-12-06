@@ -1,0 +1,27 @@
+{
+  "name": "esbuild-plugin-relay-simple-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./esbuild.config.js -watch",
+    "start:server": "node ./src/server.js",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "apollo-server": "^3.5.0",
+    "esbuild-plugin-relay": "file:../..",
+    "graphql": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-relay": "^12.0.0",
+    "relay-config": "^12.0.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^10.0.0",
+    "relay-compiler": "^12.0.0",
+    "servor": "^4.0.2"
+  }
+}
