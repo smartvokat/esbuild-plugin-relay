@@ -1,5 +1,7 @@
 # esbuild-plugin-relay
 
+[![Continuous Integration](https://github.com/smartvokat/esbuild-plugin-relay/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/smartvokat/esbuild-plugin-relay/actions/workflows/ci.yaml)
+
 An [esbuild](https://esbuild.github.io/) plugin to transform tagged GraphQL template literals for [Relay](https://relay.dev/). Heavily inspired by [babel-plugin-relay](https://www.npmjs.com/package/babel-plugin-relay).
 
 ## Features
