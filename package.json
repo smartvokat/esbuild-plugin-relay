@@ -14,6 +14,9 @@
     "esbuild",
     "esbuild-plugin"
   ],
+  "files": [
+    "lib/*"
+  ],
   "scripts": {
     "build": "./build.cjs",
     "build:watch": "./build.cjs -w",
