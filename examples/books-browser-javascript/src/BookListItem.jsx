@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql, useF, useFragment } from "react-relay/hooks";
+import { graphql, useFragment } from "react-relay/hooks";
 
 export function BookListItem({ book }) {
   const data = useFragment(BookListItem_book, book);
