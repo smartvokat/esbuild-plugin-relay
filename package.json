@@ -18,8 +18,8 @@
     "lib/*"
   ],
   "scripts": {
-    "build": "./build.cjs",
-    "build:watch": "./build.cjs -w",
+    "build": "./scripts/build.cjs",
+    "build:watch": "./scripts/build.cjs -w",
     "test": "jest"
   },
   "author": "smartvokat GmbH",
