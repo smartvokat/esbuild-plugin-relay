@@ -7,7 +7,8 @@
     "outDir": "lib",
     "declaration": true,
     "rootDir": "src",
-    "lib": ["es2021"]
+    "lib": ["es2021"],
+    "skipLibCheck": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "lib"]

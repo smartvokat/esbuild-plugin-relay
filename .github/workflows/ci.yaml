@@ -1,5 +1,7 @@
 name: Continuous Integration
+
 on: [push]
+
 jobs:
   build:
     name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
@@ -7,7 +9,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ["14.x", "16.x"]
+        node: ["16.x", "18.x", "19.x"]
         os: [ubuntu-latest]
 
     steps:
@@ -42,3 +44,6 @@ jobs:
         run: |
           echo "require('assert').ok(typeof require('./lib/index.cjs') == 'function')" | node --input-type="commonjs"
           echo "import { ok } from 'assert'; import relay from './lib/index.mjs'; ok(typeof relay === 'function');" | node --input-type="module"
+
+      - name: Lint package
+        run: npx publint

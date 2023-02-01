@@ -4,6 +4,7 @@
   "description": "An esbuild plugin to transform tagged GraphQL template literals for Relay",
   "type": "module",
   "main": "./lib/index.cjs",
+  "types": "./lib/index.d.ts",
   "exports": {
     "import": "./lib/index.mjs",
     "require": "./lib/index.cjs"
@@ -18,8 +19,8 @@
     "lib/*"
   ],
   "scripts": {
-    "build": "./build.cjs",
-    "build:watch": "./build.cjs -w",
+    "build": "./scripts/build.cjs",
+    "build:watch": "./scripts/build.cjs -w",
     "test": "jest"
   },
   "author": "smartvokat GmbH",
@@ -28,13 +29,14 @@
     "graphql": "^15.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^27.0.3",
-    "esbuild": "^0.13.15",
+    "@types/jest": "^29.4.0",
+    "esbuild": "^0.17.5",
     "estrella": "^1.4.1",
     "graphql": "^15.5.1",
-    "jest": "^27.3.1",
-    "relay-config": "^12.0.0",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.5.2"
+    "jest": "^29.4.1",
+    "publint": "^0.1.9",
+    "relay-config": "^12.0.1",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.5"
   }
 }

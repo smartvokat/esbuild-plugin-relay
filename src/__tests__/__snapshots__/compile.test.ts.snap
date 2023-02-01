@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`handles fragments 1`] = `
-"import graphql__0bb6b7b29bc3e910921551c4ff5b6757 from \\"./__generated__/TestFrag.graphql\\";
+"import graphql__0bb6b7b29bc3e910921551c4ff5b6757 from "./__generated__/TestFrag.graphql";
 graphql__0bb6b7b29bc3e910921551c4ff5b6757"
 `;
 
 exports[`handles mutations 1`] = `
-"import graphql__a16dfb32ff638dca8f34b6a63572cfeb from \\"../../esbuild-plugin-relay/__generated__/CreateUser.graphql\\";
+"import graphql__a16dfb32ff638dca8f34b6a63572cfeb from "../../esbuild-plugin-relay/__generated__/CreateUser.graphql";
 graphql__a16dfb32ff638dca8f34b6a63572cfeb"
 `;
 
 exports[`handles queries 1`] = `
-"import graphql__82961b21f6188a8e1bfe1c531398338d from \\"../../../../src/__generated__/SomeQuery.graphql\\";
+"import graphql__82961b21f6188a8e1bfe1c531398338d from "../../../../src/__generated__/SomeQuery.graphql";
 graphql__82961b21f6188a8e1bfe1c531398338d"
 `;
 
 exports[`handles subscriptions 1`] = `
-"import graphql__6dcdb2bafeca3c8b27e539bc11e725ae from \\"../../esbuild-plugin-relay/__generated__/FeedbackLikeSubscription.graphql\\";
+"import graphql__6dcdb2bafeca3c8b27e539bc11e725ae from "../../esbuild-plugin-relay/__generated__/FeedbackLikeSubscription.graphql";
 graphql__6dcdb2bafeca3c8b27e539bc11e725ae"
 `;
 
@@ -25,14 +25,14 @@ exports[`with CommonJS modules handles inline tagged template literals 1`] = `
   function SomeComponent() {
     const _graphql = {};
     const graphql = {};
-    const graphql_ = \\"graphql\\";
+    const graphql_ = "graphql";
 
     return (
       <View>
         <QueryRenderer
           environment={RelayEnvironment}
           variables={{id: '12345'}}
-          query={require(\\"../../../assets/graphql/AnotherQuery.graphql.js\\")}
+          query={require("../../../assets/graphql/AnotherQuery.graphql.js")}
         />
       </View>
     );
@@ -50,25 +50,25 @@ exports[`with CommonJS modules handles multiple tagged template literals 1`] = `
 
   'use strict';
 
-  import { graphql } from \\"react-relay/hooks\\";
+  import { graphql } from "react-relay/hooks";
 
-  const someQuery = require(\\"../../__graphql__/SomeQuery.graphql\\");
+  const someQuery = require("../../__graphql__/SomeQuery.graphql");
 
-  const anotherQuery = require(\\"../../__graphql__/AnotherQuery.graphql\\");"
+  const anotherQuery = require("../../__graphql__/AnotherQuery.graphql");"
 `;
 
 exports[`with ESM modules handles fragments 1`] = `
-"import graphql__0bb6b7b29bc3e910921551c4ff5b6757 from \\"./__generated__/TestFrag.graphql\\";
+"import graphql__0bb6b7b29bc3e910921551c4ff5b6757 from "./__generated__/TestFrag.graphql";
 graphql__0bb6b7b29bc3e910921551c4ff5b6757"
 `;
 
 exports[`with ESM modules handles inline tagged template literals 1`] = `
-"import graphql__a20897165ec52e5fd688ea09e854dfcc from \\"../../../assets/graphql/AnotherQuery.graphql.js\\";
+"import graphql__a20897165ec52e5fd688ea09e854dfcc from "../../../assets/graphql/AnotherQuery.graphql.js";
 
   function SomeComponent() {
     const _graphql = {};
     const graphql = {};
-    const graphql_ = \\"graphql\\";
+    const graphql_ = "graphql";
 
     return (
       <View>
@@ -83,8 +83,8 @@ exports[`with ESM modules handles inline tagged template literals 1`] = `
 `;
 
 exports[`with ESM modules handles multiple tagged template literals 1`] = `
-"import graphql__82961b21f6188a8e1bfe1c531398338d from \\"../../__graphql__/SomeQuery.graphql\\";
-import graphql__a20897165ec52e5fd688ea09e854dfcc from \\"../../__graphql__/AnotherQuery.graphql\\";
+"import graphql__82961b21f6188a8e1bfe1c531398338d from "../../__graphql__/SomeQuery.graphql";
+import graphql__a20897165ec52e5fd688ea09e854dfcc from "../../__graphql__/AnotherQuery.graphql";
 
   /**
    * Copyright (c) Example Inc.
@@ -95,7 +95,7 @@ import graphql__a20897165ec52e5fd688ea09e854dfcc from \\"../../__graphql__/Anoth
 
   'use strict';
 
-  import { graphql } from \\"react-relay/hooks\\";
+  import { graphql } from "react-relay/hooks";
 
   const someQuery = graphql__82961b21f6188a8e1bfe1c531398338d;
 
@@ -115,7 +115,7 @@ exports[`with enabled development mode compares the hash in a CJS module 1`] = `
 
     const {graphql} = require('relay-runtime');
 
-    const fragment = graphql__853140a093e3db9b64cb4111ee2de8dd !== void 0 ? graphql__853140a093e3db9b64cb4111ee2de8dd : (graphql__853140a093e3db9b64cb4111ee2de8dd = require(\\"./__generated__/AFragment.graphql\\"), graphql__853140a093e3db9b64cb4111ee2de8dd.hash && graphql__853140a093e3db9b64cb4111ee2de8dd.hash !== \\"853140a093e3db9b64cb4111ee2de8dd\\" && console.error(\\"The definition of 'AFragment' appears to have changed. Run \`relay-compiler\` to update the generated files to receive the expected data.\\"), graphql__853140a093e3db9b64cb4111ee2de8dd);
+    const fragment = graphql__853140a093e3db9b64cb4111ee2de8dd !== void 0 ? graphql__853140a093e3db9b64cb4111ee2de8dd : (graphql__853140a093e3db9b64cb4111ee2de8dd = require("./__generated__/AFragment.graphql"), graphql__853140a093e3db9b64cb4111ee2de8dd.hash && graphql__853140a093e3db9b64cb4111ee2de8dd.hash !== "853140a093e3db9b64cb4111ee2de8dd" && console.error("The definition of 'AFragment' appears to have changed. Run \`relay-compiler\` to update the generated files to receive the expected data."), graphql__853140a093e3db9b64cb4111ee2de8dd);
     "
 `;
 
@@ -123,7 +123,7 @@ exports[`with enabled development mode compares the hash in a CJS module with a 
 "
       fetchQuery<AppQuery>(
         environment,
-        graphql__20457954866480ef5ba77c6d8498f295 !== void 0 ? graphql__20457954866480ef5ba77c6d8498f295 : (graphql__20457954866480ef5ba77c6d8498f295 = require(\\"../src/__generated__/AppQuery.graphql\\"), IS_DEV == true && graphql__20457954866480ef5ba77c6d8498f295.hash && graphql__20457954866480ef5ba77c6d8498f295.hash !== \\"20457954866480ef5ba77c6d8498f295\\" && console.error(\\"The definition of 'AppQuery' appears to have changed. Run \`relay-compiler\` to update the generated files to receive the expected data.\\"), graphql__20457954866480ef5ba77c6d8498f295),
+        graphql__20457954866480ef5ba77c6d8498f295 !== void 0 ? graphql__20457954866480ef5ba77c6d8498f295 : (graphql__20457954866480ef5ba77c6d8498f295 = require("../src/__generated__/AppQuery.graphql"), IS_DEV == true && graphql__20457954866480ef5ba77c6d8498f295.hash && graphql__20457954866480ef5ba77c6d8498f295.hash !== "20457954866480ef5ba77c6d8498f295" && console.error("The definition of 'AppQuery' appears to have changed. Run \`relay-compiler\` to update the generated files to receive the expected data."), graphql__20457954866480ef5ba77c6d8498f295),
         {id: 4},
       )
       .subscribe({
@@ -136,7 +136,7 @@ exports[`with enabled development mode compares the hash in a CJS module with a 
 `;
 
 exports[`with enabled development mode compares the hash in an ESM module 1`] = `
-"import graphql__853140a093e3db9b64cb4111ee2de8dd from \\"./__generated__/AFragment.graphql\\";
+"import graphql__853140a093e3db9b64cb4111ee2de8dd from "./__generated__/AFragment.graphql";
 
     /**
      * Copyright (c) Example Inc.
@@ -149,15 +149,15 @@ exports[`with enabled development mode compares the hash in an ESM module 1`] = 
 
     const {graphql} = require('relay-runtime');
 
-    const fragment = (graphql__853140a093e3db9b64cb4111ee2de8dd.hash && graphql__853140a093e3db9b64cb4111ee2de8dd.hash !== \\"853140a093e3db9b64cb4111ee2de8dd\\" && console.error(\\"The definition of 'AFragment' appears to have changed. Run \`relay-compiler\` to update the generated files to receive the expected data.\\"), graphql__853140a093e3db9b64cb4111ee2de8dd);
+    const fragment = (graphql__853140a093e3db9b64cb4111ee2de8dd.hash && graphql__853140a093e3db9b64cb4111ee2de8dd.hash !== "853140a093e3db9b64cb4111ee2de8dd" && console.error("The definition of 'AFragment' appears to have changed. Run \`relay-compiler\` to update the generated files to receive the expected data."), graphql__853140a093e3db9b64cb4111ee2de8dd);
     "
 `;
 
 exports[`with enabled development mode compares the hash in an ESM module with a custom condition 1`] = `
-"import graphql__f7192c5a0ab88781f703d276e7bd22a0 from \\"../../__generated__/Query.graphql\\";
+"import graphql__f7192c5a0ab88781f703d276e7bd22a0 from "../../__generated__/Query.graphql";
 
   function Component() {
-    useLazyQuery((process.env.NODE_ENV !== \\"production\\" && graphql__f7192c5a0ab88781f703d276e7bd22a0.hash && graphql__f7192c5a0ab88781f703d276e7bd22a0.hash !== \\"f7192c5a0ab88781f703d276e7bd22a0\\" && console.error(\\"The definition of 'Query' appears to have changed. Run \`relay-compiler\` to update the generated files to receive the expected data.\\"), graphql__f7192c5a0ab88781f703d276e7bd22a0));
+    useLazyQuery((process.env.NODE_ENV !== "production" && graphql__f7192c5a0ab88781f703d276e7bd22a0.hash && graphql__f7192c5a0ab88781f703d276e7bd22a0.hash !== "f7192c5a0ab88781f703d276e7bd22a0" && console.error("The definition of 'Query' appears to have changed. Run \`relay-compiler\` to update the generated files to receive the expected data."), graphql__f7192c5a0ab88781f703d276e7bd22a0));
   }
     "
 `;
