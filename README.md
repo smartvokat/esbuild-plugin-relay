@@ -13,7 +13,7 @@ An [esbuild](https://esbuild.github.io/) plugin to transform tagged GraphQL temp
 
 ## Caveat
 
-This plugin uses string replacements and **does not parse** the source code. This means it will try to compile GraphQL literals even if they are commented out. If that does not fit your workflow, you'll need to use ESBuild + babel + babel-plugin-relay.
+This plugin uses string replacements and **does not parse** the source code. This means it will try to compile GraphQL literals even if they are commented out. If that does not fit your workflow, you'll need to use esbuild + babel + babel-plugin-relay.
 
 ## Installation
 
@@ -34,10 +34,8 @@ import relay from "esbuild-plugin-relay";
 
 esbuild.build({
   // ...other options,
-  plugins: [
-    relay()
-  ]
-})
+  plugins: [relay()],
+});
 ```
 
 ## Acknowledgements
