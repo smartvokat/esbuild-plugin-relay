@@ -34,9 +34,6 @@ jobs:
       #- name: Lint
       #  run: npm run lint
 
-      - name: Lint packages
-        run: npx publint
-
       - name: Test
         run: npm run test
 
@@ -47,3 +44,6 @@ jobs:
         run: |
           echo "require('assert').ok(typeof require('./lib/index.cjs') == 'function')" | node --input-type="commonjs"
           echo "import { ok } from 'assert'; import relay from './lib/index.mjs'; ok(typeof relay === 'function');" | node --input-type="module"
+
+      - name: Lint package
+        run: npx publint
