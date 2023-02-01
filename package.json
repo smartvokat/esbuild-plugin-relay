@@ -4,6 +4,7 @@
   "description": "An esbuild plugin to transform tagged GraphQL template literals for Relay",
   "type": "module",
   "main": "./lib/index.cjs",
+  "types": "./lib/index.d.ts",
   "exports": {
     "import": "./lib/index.mjs",
     "require": "./lib/index.cjs"
